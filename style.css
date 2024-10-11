@@ -1,28 +1,155 @@
+@font-face{
+    font-family: 'IBM Plex Mono';
+    src: url('./font/IBMPlexMono-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'PlexMono-Bold';
+    src: url('./font/IBMPlexMono-Regular.ttf');
+    font-weight: 700;
+}
+
+:root {
+    font-family: 'IBMPlexMono-Bold';
+    
+
+
+
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+   background-color: #000028;
+   display: flex;
+   justify-content: center;
+}
+
+.header{
+    position: relative;
+    width: 1024px;
+    height: 768px;
+    background-image: url(https://s3-alpha-sig.figma.com/img/dfd0/bdda/b7b566964fd701840768cd9eecd5ea42?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ADGkT7zF6jvk3rAiHXP3HkgCPUyxNV-gNgc9WULpkx5gOGcDsVOESATml~WECKtjIS-3F1C2OEt5UvHm9RRk8dVd-UXPErUwoJrtVg2bGKE7CFIPmP5x1hUVfjt-LBPZGS~QggWyIF3JhKH78W~PEsxPby25jChChFv2MTv8c7vZ1Ft5a2ZrjgqWpd7zWsRVsjINMk4fsv2UCJxoeCwcEYD4YGyd43wMuBK7p5wUAB8tdCgjGi6aXSvRHRnz~N4kUcPyGTxL5sFLVJq9yqTXHDwSSoPJpgsOzdyf2cN~rv2KbakKVOXB2Wm2gFHoShr6Mn4eg9uXxz21-JhqdrkP1g__);
+    background-size: 1229px 768px;
+    background-position-x: -102px;
+    
+}
+
+ .header .ellip {
+      position: absolute;
+      width: 9px;
+     height: 9px;
+      top: 28px;
+      left: 986px;
+      background: #FF0070;
+      box-shadow: 0 0 4px 2px #FF0070;
+      border-radius: 100%;
+
+   }
+
+  .header .rec {
+     position: absolute;
+     width: 33px;
+     height: 26px;
+     left: 943px;
+     top: 20px;
+     font-family: 'IBM PLex Mono';
+     color: #FF0070;
+     text-align: center;
+     line-height: 25px;
+     font-size: 18px;
+     margin: 0;
+     font-style: normal;
+     font-weight: 400;
+}
+
+
+
 .navigation {
+
     display: flex;
-    gap: 10px;
+    position: relative;
+    justify-content: center;
+    top: 20px;
+    left: 397px;
+    width: 230px;
+    height: 26px;
+    list-style-type: none;
 }
 
 .navigation button {
-    display: flex;
-     font-size: 18px;
-     color: #FF0070;
-     border: none;
-     background-color: transparent;
-     padding: 0 13px;
-}
-
-.foc{
- color: #DB00FF;
- font-size: 157px;
- text-shadow: 4px 4px 0px #FF0070;
-}
-}
-
-.text-p-header{
+    width: 70px;
+    height: 26px;
+    padding-right: 13px;
+    padding-left: 13px;
+    font-family:"IBM Plex Mono";
     color: #FF0070;
+    line-height: 18px;
+    text-align: center;
+    size: 18px;
+    font-weight: 400;
+    background-color: rgba(28, 28, 28, 0);
+    border: none;
+    outline: none;
+    cursor: pointer;
+     
+
+}
+.foc{
+        position: absolute;
+        top: 319px;
+        color: #DB00FF;
+        width: 759px;
+        height: 130px;
+        margin: 0;
+        font-family: "IBM Plex Mono";
+        font-weight: bold;
+        font-size: 157px;
+        line-height: 129.53px;
+        text-shadow: 4px 4px 0px #FF0070;
+}
+
+
+.text-header{
+    position: absolute;
+    top: 563px;
+    left: 513px;
+    bottom: 120px;
+    right: 20px;
+    width: 491px;
+    height: 71px;
+    font-family: "IBM Plex Mono";
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23.4px;
+    background-color: #FF0070;
+    color: #000028;
+
+}
+
+.main .title {
+    
+    width: 314.96px;
+    height: 47px;
+    left: 20px;
+
+    font-family: 'IBM Plex Mono';
+    color: #FF0070;
+    font-weight: 700px;
+    font-size: 18px;
+    line-height: 23.4px;
     
 }
-body{
-    background-image: url(https://s3-alpha-sig.figma.com/img/dfd0/bdda/b7b566964fd701840768cd9eecd5ea42?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ADGkT7zF6jvk3rAiHXP3HkgCPUyxNV-gNgc9WULpkx5gOGcDsVOESATml~WECKtjIS-3F1C2OEt5UvHm9RRk8dVd-UXPErUwoJrtVg2bGKE7CFIPmP5x1hUVfjt-LBPZGS~QggWyIF3JhKH78W~PEsxPby25jChChFv2MTv8c7vZ1Ft5a2ZrjgqWpd7zWsRVsjINMk4fsv2UCJxoeCwcEYD4YGyd43wMuBK7p5wUAB8tdCgjGi6aXSvRHRnz~N4kUcPyGTxL5sFLVJq9yqTXHDwSSoPJpgsOzdyf2cN~rv2KbakKVOXB2Wm2gFHoShr6Mn4eg9uXxz21-JhqdrkP1g__);
+
+.main{
+    width: 1024px;
+    height: 3352px;
+    top: 828;
+    gap: 0;
+    opacity: 0;
 }
+
+.main .mnogo
