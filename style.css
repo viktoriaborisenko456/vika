@@ -8,15 +8,10 @@
     font-family: 'PlexMono-Bold';
     src: url('./font/IBMPlexMono-Regular.ttf');
     font-weight: 700;
+    font-weight: normal;
 }
 
-:root {
-    font-family: 'IBMPlexMono-Bold';
-    
 
-
-
-}
 
 html{
     box-sizing: border-box;
@@ -28,6 +23,11 @@ body{
    justify-content: center;
 }
 
+.container{
+    max-height: max-content;
+    margin: 0;
+    position: relative;
+}
 .header{
     position: relative;
     width: 1024px;
@@ -38,7 +38,7 @@ body{
     
 }
 
- .header .ellip {
+ .header.ellip {
       position: absolute;
       width: 9px;
      height: 9px;
@@ -47,10 +47,11 @@ body{
       background: #FF0070;
       box-shadow: 0 0 4px 2px #FF0070;
       border-radius: 100%;
+      box-shadow: 0 0 4px 2px #FF0070;
 
    }
 
-  .header .rec {
+  .header.rec {
      position: absolute;
      width: 33px;
      height: 26px;
@@ -62,11 +63,8 @@ body{
      line-height: 25px;
      font-size: 18px;
      margin: 0;
-     font-style: normal;
      font-weight: 400;
 }
-
-
 
 .navigation {
 
@@ -95,21 +93,60 @@ body{
     border: none;
     outline: none;
     cursor: pointer;
-     
+}
+ 
 
 }
-.foc{
-        position: absolute;
-        top: 319px;
-        color: #DB00FF;
-        width: 759px;
-        height: 130px;
-        margin: 0;
-        font-family: "IBM Plex Mono";
-        font-weight: bold;
-        font-size: 157px;
-        line-height: 129.53px;
-        text-shadow: 4px 4px 0px #FF0070;
+button:hover{
+border: 1px solid #FF0070;
+}   
+     
+.header.rectangle79 {
+ position: absolute;
+ top: 723px;
+ left: 20px;
+ margin: 0;
+ width: 25px;
+ height: 25px;
+ max-width: 25px;
+ border-width: 0 0 1px 1px;
+ border-color: #FF0070;
+ 
+}
+
+.header.rectangle77 {
+  position: absolute;
+  top: 20px;
+  left: 979px;
+  margin: 0;
+  width: 25px;
+  height: 25px;
+  max-width: 25px;
+  border-width: 1px 1px 0 0;
+}
+.header.ellipse{
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    top: 28px;
+    left: 986px;
+    background: #FF0070;
+    border-radius: 100%;
+    box-shadow: 0 0 4px 2px #FF0070;
+}
+  
+ .foc{
+ position: absolute;
+ top: 319px;
+ color: #DB00FF;
+ width: 759px;
+ height: 130px;
+  margin: 0;
+ font-family: "IBM Plex Mono";
+ font-weight: bold;
+ font-size: 157px;
+ line-height: 129.53px;
+ text-shadow: 4px 4px 0px #FF0070;
 }
 
 
@@ -128,28 +165,4 @@ body{
     background-color: #FF0070;
     color: #000028;
 
-}
 
-.main .title {
-    
-    width: 314.96px;
-    height: 47px;
-    left: 20px;
-
-    font-family: 'IBM Plex Mono';
-    color: #FF0070;
-    font-weight: 700px;
-    font-size: 18px;
-    line-height: 23.4px;
-    
-}
-
-.main{
-    width: 1024px;
-    height: 3352px;
-    top: 828;
-    gap: 0;
-    opacity: 0;
-}
-
-.main .mnogo
