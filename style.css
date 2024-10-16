@@ -1,18 +1,18 @@
 @font-face{
   font-family: 'IBM Plex Mono';
-  src: url('./fonts/IBMPlexMono-Regular.ttf');
+  src: url('./font/IBMPlexMono-Regular.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face{
   font-family: 'IBM Plex Mono';
-  src: url('./fonts/IBMPlexMono-Bold.ttf');
+  src: url('./font/IBMPlexMono-Bold.ttf');
   font-weight: bold;
   font-style: normal;
 }
 
-.uglybottom{
+.nizugl{
   margin: 0px;
   width: 25px;
   height: 25px;
@@ -22,7 +22,7 @@
   border-color: #FF0070;
 }
 
-.uglytop{
+.ferhugl{
   width: 25px;
   height: 25px;
   border-width: 1px 1px 0 0;
@@ -93,8 +93,6 @@ body{
   background-position-x: -102px;
 }
 
-
-
 .navigation {
   display: flex;
   position: relative;
@@ -155,7 +153,6 @@ button:hover {
   left: 986px;
   background: #FF0070;
   border-radius: 100%;
-
   box-shadow: 0 0 4px 2px #ff0070;
 
 }
@@ -167,18 +164,14 @@ button:hover {
   left: 943px;
   top: 20px;
   margin: 0;
-
   font-family: 'IBM Plex Mono';
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
   line-height: 25px;
-
   text-align: center;
-
   color: #FF0070;
 }
-
 
 .header h1{
   position: absolute;
@@ -204,14 +197,13 @@ button:hover {
 }
 
 .main{
-
   width: 1024px;
   height: 3352px;
   top: 828px;
   gap: 0;
 }
 
-.section1 {
+.section11 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -224,8 +216,7 @@ button:hover {
   top: 828px;
 }
 
-
-.section1 .title{
+.section11 .title{
   position: absolute;
   width: 314.96px;
   height: 47px;
@@ -233,7 +224,7 @@ button:hover {
   top: 0;
 }
 
-.section1 .mnogo{
+.section11 .mnogo{
   position: absolute;
   width: 648.92px;
   height: 23px;
@@ -241,11 +232,11 @@ button:hover {
   top: 0;
 }
 
-.section1 .mnogotext{
+.section11 .mnogotext{
   position: absolute;
   width: 648.92px;
   height: 211px;
-  right: 20.19px;
+  left: 354.89px;
   top: 33px;
 }
 
@@ -276,8 +267,7 @@ a:focus {
   text-decoration: none; 
 }
 
-
-.section1 .dof{
+.section11 .dofamin{
   position: absolute;
   width: 648.92px;
   height: 23px;
@@ -285,12 +275,94 @@ a:focus {
   top: 264px;
 }
 
-
-
-.section1 .doftext{
+.section11 .dofamintext{
   position: absolute;
   width: 648.92px;
   height: 211px;
   left: 355.08px;
   top: 297px;
 }
+
+.section22{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+
+  position: absolute;
+  width: 1024px;
+  height: 498px;
+  left: 0;
+  top: 1416px;
+}
+
+.section22 .title2{
+  position: absolute;
+  width: 315px;
+  height: 47px;
+  left: 20px;
+  top: 0;
+}
+
+.section22 .contentsect2{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  gap: 20px;
+
+  position: absolute;
+  width: 984px;
+  height: 431px;
+  left: 20px;
+  top: 67px;
+}
+
+.contentsect2 .mnogosect2{
+  position: absolute;
+  width: 315px;
+  height: 23px;
+  left: 0;
+  top: 0;
+}
+
+.contentsect2 .mnogotextsect2{
+  position: absolute;
+  width: 315px;
+  height: 351px;
+  left: 0;
+  top: 33px;
+}
+
+.contentsect2 .food{
+  position: absolute;
+  width: 315px;
+  height: 23px;
+  left: 335px;
+  top: 0;
+}
+
+.contentsect2 .foodtext{
+  position: absolute;
+  width: 315px;
+  height: 328px;
+  top: 33px;
+  left: 335px;
+}
+
+.contentsect2 .gadsheti{
+  position: absolute;
+  width: 315px;
+  height: 23px;
+  left: 670px;
+  top: 0;
+}
+
+.contentsect2 .gadshetitext{
+  position: absolute;
+  width: 315px;
+  height: 398px;
+  top: 33px;
+  left: 670px;
+}
+
